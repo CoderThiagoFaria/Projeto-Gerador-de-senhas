@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Gerador de Senha</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title-gerador">
+                <h1>Gerador de Senhas</h1>
+                <hr>
+            </div>
+            <div class="escolhas">
+                <ul>
+                    <li><input type="checkbox" name="caixa" id="minus">Minúscula</li>
+                    <li><input type="checkbox" name="caixa" id="maisu">Letra Maiúscula</li>
+                    <li><input type="checkbox" name="caixa" id="especial">Caracteres Especiais</li>
+                </ul>
+            </div>
+            <div class="slider">
+                <h1>Tamanho <span id="valor"></span> caracteres</h1>
+                <input type="range" min="5" max="25" value="0" id="slider">
+            </div>
+            <hr>
+            <div class="button">
+                <div class="blackbox">
+                    <p><input type="button" class="botao" value="GERAR SENHA" id="gerasenha"></input></p>
+                </div>
+            </div>
+            <div class="senha">
+                <div class="box-senha">
+                    <p id="mostrarSenha">Sua senha</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="arquivo.js"></script>
+    </body>
+</html>
